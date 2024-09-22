@@ -1,0 +1,7 @@
+
+
+%tbl = table(train_output(:,1),train_input(:,1),train_input(:,2),train_input(:,3),train_input(:,4), train_input(:,5),train_input(:,6),train_input(:,7),train_input(:,8),train_input(:,9),train_input(:,10),train_input(:,11),train_input(:,12),train_input(:,13),train_input(:,14),train_input(:,15),train_input(:,16),train_input(:,17),train_input(:,18),train_input(:,19),train_input(:,20),train_input(:,21),train_input(:,22),train_input(:,23),train_input(:,24),train_input(:,25),train_input(:,26),train_input(:,27),train_input(:,28),train_input(:,29),train_input(:,30),...
+%    VariableNames=["labels", "radiusMean", "textureMean", "perimeterMean", "areaMean", "smoothnessMean", "compactnessMean", "concavityMean", "concavePointsMean", "symmetryMean", "fractalDimmensionMean", "radiusSe", "textureSe", "perimeterSe","areaSe", "smoothnessSe", "compactnessSe", "concavitySe", "concavePointsSe", "symmetrySe", "fractalDismensionSe", "radiusWorst", "textureWorst", "perimenterWorst", "areaWorst", "smoothnessWorst", "compactnessWorst", "concavityWorst", "concavePointWorst", "symmetryWorst", "fractalDimmensionWorst"]);
+
+MnrModel = fitmnr(train_input, train_output)
+[c,cm,ind,per] = confusion(train_output,MnrModel)

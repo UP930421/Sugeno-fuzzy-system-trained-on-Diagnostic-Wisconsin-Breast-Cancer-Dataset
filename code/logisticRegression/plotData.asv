@@ -1,0 +1,9 @@
+function plotData (x, y)
+    figure; hold on;
+
+    benign = find(y==1);
+    malignant = find(y==0);
+
+    plot(x(benign,1), x(benign,2),"Color",)
+end
+
